@@ -1,43 +1,83 @@
+<!DOCTYPE html>
 <html>
-	<body>
-		<table border="1" height="100%" width="100%">
-			<tr height="40">
-				<td>
-					
-					<div align="right"> <a href="home.html">Home</a>|<a href="login.html">Login</a></div>
-				</td>
-				
-			</tr>
-			<tr height="390">
-				<td align="center" >
-				<form align="left">
-					
-						
-						<pre align="left"> 
-Name:             <input type="text" name="name"><hr/>
-Email:            <input type="text" name="email"><hr/>
-User Name:        <input type="text" name="username"><hr/>
-Password:         <input type="password" name="password"><hr/>
-Confirm Password: <input type="password" name="cPassword"><hr/>
-						</pre>
-						
-							<legend>Gender</legend>
-							<input type="radio" name="gender" value="male">Male<br/>
-							<input type="radio" name="gender" value="female">Female<br/>
-							<input type="radio" name="gender" value="other">Other<br/>
-						</fieldset><br/>
-						
-						<hr/>
-						<input type="submit" value="Submit">
-						<input type="reset">
-	
-					</fieldset>
-				</form>					
-				</td>
-			</tr>
-				
-		</table>
-		
-	</body>
+<body>
+<form method="post" action="registration.php">
+    <table width="1300" border=1 cellspacing=0 cellpadding=0 align="center">
+        <tr>
+            
+            <td height="100" colspan="3">
+					<a href="index.html"><big><h1>LETS GO</h1></big></a>                   
+                
 
+            </td>
+        </tr>
+        <br/>
+        <tr height="400">
+			
+                                            
+            <td>
+                <big>Welcome to Event information center</big><br/>
+
+			</td>
+			<td>
+				<p align="left">
+                    <big><a href="index.html"> Login /</a></big>
+                    <big><a href="registration.html"> Registration </a></big> 
+						 <fieldset>
+							<legend> REGISTRATION </legend>
+							<strong>Name:</strong>
+								<input type="text" name="name">
+							<br/>
+							<br/>
+							<strong>Email:</strong>
+								<input type="text" name="email">
+							<strong>Address:</strong>
+								<input type="text" name="address">	
+							<br/>
+							<br/>
+							<strong>User Name:</strong>
+								<input type="text" name="username">	
+							<br/>
+							<br/>
+							<strong>Password:</strong>
+								<input type="password" name="password">	
+							<br/>
+							<br/>
+							<strong>Confirm Password:</strong>
+								<input type="text" name="cpassword">	
+							<br/>
+							<br/>
+							<fieldset>
+							<legend> Gender </legend>
+										<input type="radio" name="gender" value="male" required> Male
+										<input type="radio" name="gender" value="female"> Female
+										<input type="radio" name="gender" value="other"> Other
+							</fieldset>
+							<br/>
+							<br/>
+							<fieldset>
+							<legend> Date of Birth </legend>
+										<input type="text" name="day">/ 
+										<input type="text" name="month">/
+										<input type="text" name="year">(dd/mm/yy)
+							</fieldset>
+							<br/>
+							<input type="submit"name="btn_sub">
+							<input type="reset" name="Reset">
+						</fieldset>
+                </p> 
+			</td>
+			
+        </tr>        
+        <tr>
+            <td  height="50" align=center colspan="3">
+				<big><a href="policy.html"> Privace Policy </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+				<big><a href="aboutus.html"> About Us </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+				<big><a href="terms.html"> Terms and Condition </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+				<big><a href="paymentmethod.html"> Payment Method </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+			</td>
+        </tr>
+    </table>
+</form>
+</body>
 </html>
