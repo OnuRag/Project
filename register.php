@@ -23,11 +23,35 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><b>PLease Fill all fields..!</b>
 			</div>
 		";
-	
+		exit();
+	} else {
+		if(!preg_match($name,$f_name)){
+		echo "
+			<div class='alert alert-warning'>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<b>this $f_name is not valid..!</b>
 			</div>
 		";
 		exit();
-	
+	}
+	if(!preg_match($name,$l_name)){
+		echo "
+			<div class='alert alert-warning'>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<b>this $l_name is not valid..!</b>
+			</div>
+		";
+		exit();
+	}
+	if(!preg_match($emailValidation,$email)){
+		echo "
+			<div class='alert alert-warning'>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<b>this $email is not valid..!</b>
+			</div>
+		";
+		exit();
+	}
 	if(strlen($password) < 9 ){
 		echo "
 			<div class='alert alert-warning'>
