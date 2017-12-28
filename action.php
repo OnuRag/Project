@@ -19,13 +19,7 @@ if(isset($_POST["category"])){
 		}
 		echo "</div>";
 	}
-}
-if(isset($_POST["brand"])){
-	$brand_query = "SELECT * FROM brands";
-	$run_query = mysqli_query($con,$brand_query);
-	echo "
-		<div class='nav nav-pills nav-stacked'>
-			<li class='active'><a href='#'><h4>Brands</h4></a></li>
+}='active'><a href='#'><h4>Brands</h4></a></li>
 	";
 	if(mysqli_num_rows($run_query) > 0){
 		while($row = mysqli_fetch_array($run_query)){
